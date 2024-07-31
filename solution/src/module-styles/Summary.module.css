@@ -1,0 +1,93 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(19, 18, 18, 0.75);
+}
+
+.modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100vh;
+    width: 25%
+}
+
+.modalHeader h2{
+    margin: 0;
+}
+
+.modalHeader p{
+    margin: 0;
+}
+
+.modalHeader p{
+    color: #80706d
+}
+
+.modalBody ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modalBody ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.modalBody li{
+    background-color: #fcf8f5;
+    border-bottom: 1px solid #f6f2ef;
+}
+
+.modalBody ul li img {
+    margin-right: 10px;
+    height: 50px;
+}
+
+.summaryDetailsWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.summaryDetails{
+    display: grid;
+}
+
+.modalFooter {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalFooterTotalPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modalFooter button{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: hsl(14, 86%, 42%);
+    background-color: hsl(14, 86%, 42%);
+    padding: 0.3rem 0;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .modalContent{
+        width: 50%
+    }
+  }
